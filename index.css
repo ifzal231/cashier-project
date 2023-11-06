@@ -1,0 +1,150 @@
+/* 
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}  */
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and text color for the body */
+/* body {
+    background-color:#04364A;
+    font-family: Arial, sans-serif;
+} */
+
+body {
+    background: linear-gradient(45deg, #ff5733, #585f63, #8b33ff, #33ff57);
+    background-size: 400% 400%;
+    animation: gradientChange 10s linear infinite;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    25%{
+        background-position: 50% 25%;
+
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.c-1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: auto;
+    /* background: #0ef linear-gradient(56deg, black, transparent); */
+}
+
+/* Style the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the heading */
+.heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the description */
+.description {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Style labels and input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the check button */
+#Check-button {
+    background-color: #647e9b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the error message */
+#error-Messege {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Style the change table */
+.change-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.change-table th {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px;
+}
+
+.change-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Add some spacing between table cells */
+.change-table td + td {
+    margin-left: 5px;
+}
+
+/* Style the caption */
+.change-table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Add a hover effect for the check button */
+ #Check-button:hover {
+    background-color: #0056b3;
+} 
+
+
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
